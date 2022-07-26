@@ -7,7 +7,7 @@ function Survey({handleSetPolls, polls}){
     useEffect(() => {
         fetch("http://localhost:3000/questions")
         .then(res => res.json())
-        .then(data => console.log(data.questions))
+        .then(data => handleSetPolls(data))
     }, [])
 
     return(

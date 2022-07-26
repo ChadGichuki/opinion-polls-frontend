@@ -19,6 +19,10 @@ function App() {
     }
   ])
 
+  function handleNewPoll(data){
+    setPolls([...polls, data])
+  }
+
 
   return (
     <div className="App">
@@ -27,7 +31,7 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/survey" element={<Survey handleSetPolls={(questions) => setPolls(questions)} polls={polls}/>}/>
         <Route path="/results" element={<Results polls={polls}/>}/>
-        <Route path="/contribute" element={<NewPoll/>}/>
+        <Route path="/contribute" element={<NewPoll onNewPoll={handleNewPoll}/>}/>
       </Routes>
     </div>
   );
