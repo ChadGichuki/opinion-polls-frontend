@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar"
 import Home from "./Home"
+import Survey from "./Survey";
 
 function App() {
 
@@ -15,7 +16,7 @@ function App() {
       {/* <Navbar/> */}
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/survey" element={<Survey handleSetPolls={setPolls} polls={polls}/>}/>
+        <Route path="/survey" element={<Survey handleSetPolls={(questions) => setPolls(questions)} polls={polls}/>}/>
         {/* <Route path="/results" element={<Results/>}/>
         <Route path="/contribute" element={<NewPoll/>}/> */}
       </Routes>
