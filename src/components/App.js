@@ -1,17 +1,17 @@
 import React from "react";
-import { Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar"
 import Home from "./Home"
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      {/* <Navbar/> */}
       <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/survey" element={<Survey/>}/>
+        {/* <Route path="/survey" element={<Survey/>}/>
         <Route path="/results" element={<Results/>}/>
-        <Route path="/contribute" element={<NewPoll/>}/>
+        <Route path="/contribute" element={<NewPoll/>}/> */}
       </Routes>
     </div>
   );
