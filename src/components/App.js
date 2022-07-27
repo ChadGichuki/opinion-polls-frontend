@@ -19,6 +19,7 @@ function App() {
     }
   ])
 
+  // Pass this as a prop to NewPoll element where the form is
   function handleNewPoll(data){
     setPolls([...polls, data])
   }
