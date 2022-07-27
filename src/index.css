@@ -60,3 +60,27 @@ table {
   max-width: fit-content;
 
 }
+
+.home {
+margin: auto;
+text-align: center;
+padding: 150px 0;
+}
+
+.home h1 {
+  line-height: 2.5em;
+  font-size: 5em;
+}
+
+.home h3 {
+  line-height: 2.5em;
+}
+
+.homebtn {
+  margin-right: 10px;
+  margin-left: 10px;
+  max-height: fit-content;
+  text-decoration: none;
+  background-color: black;
+  padding: 7px 12px;
+}

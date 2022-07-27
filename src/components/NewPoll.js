@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 function NewPoll({onNewPoll}){
 
+    // Nested data makes it harder to use formData Object hence we have to set state
+    // for each input field
     const [question, setQuestion] = useState("")
     const [image1, setImage1] = useState("")
     const [label1, setLabel1] = useState("")
@@ -42,6 +44,13 @@ function NewPoll({onNewPoll}){
         .then(res => res.json())
         .then(data => {
             onNewPoll(data)
+
+            // reset the form input fields
+            setImage1("")
+            setQuestion("")
+            setImage2("")
+            setLabel2("")
+            setLabel1("")
         })
 
         

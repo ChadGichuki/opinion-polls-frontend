@@ -1,6 +1,8 @@
 import React from "react";
 
 function Results({polls}){
+
+    // This component displays the latest poll results in a simple table
     return(
         <table className="table table-striped-columns">
             <thead>
@@ -20,9 +22,9 @@ function Results({polls}){
                             <td>{poll.id}</td>
                             <td>{poll.question}</td>
                             <td>{poll.option1.label}</td>
-                            <td>{poll.option1.votes} Votes</td>
+                            <td>{poll.option1.votes} {poll.option1.votes === 1 ? "Vote" : "Votes"}</td>
                             <td>{poll.option2.label}</td>
-                            <td>{poll.option2.votes} Votes</td>
+                            <td>{poll.option2.votes} {poll.option2.votes === 1 ? "Vote" : "Votes"}</td>
                         </tr>
                     )
                 })}
