@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import { Link } from "react-router-dom";
 import Poll from "./Poll"
 
 function Survey({handleSetPolls, polls}){
@@ -16,6 +17,7 @@ function Survey({handleSetPolls, polls}){
             {polls.map(poll => {
                return <Poll key={poll.id} id={poll.id} question={poll.question} option1={poll.option1} option2={poll.option2}/>
             })}
+            <h3>Thank you for taking the survey. Head over to <Link to="/results">Current Polls</Link> to see the latest polls.</h3>
         </div>
     )
 }
