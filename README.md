@@ -1,70 +1,76 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Friends-of-Frodo-Baggins
+A Lord Of The Rings Fanpage. 
 
-## Available Scripts
+This is a Single Page Application (SPA) where fans of the epic fantasy series by J.R.R. Tokien can find interesting facts on the movies, books and their favourite characters. Users can also add to the list of the fans' favourite quotes from the series. To enhance the user experience, visitors to the page get to enjoy the nostalgic and iconic song (Concerning Hobbits) from the 2nd Movie's soundtrack.
 
-In the project directory, you can run:
+Vew the web page, hosted on Github pages [here.](https://chadgichuki.github.io/Friends-of-Frodo-Baggins/) 
 
-### `npm start`
+However, please note that ES6 modules are subject to same-origin policy. You therefore need to run your script from a local server, opening the file directly with a browser will throw an error citing [CORS.](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+When running from a local server you should expect to see a page like this:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<img src="https://github.com/ChadGichuki/Friends-of-Frodo-Baggins/blob/main/media/landing-page.png" height="500">
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
+### Pre-requisites
+The following should be installed to run the program locally: nodejs, npm
 
-### `npm run build`
+### Installation
+- Fork and clone the repository.
+```
+git clone https://github.com/ChadGichuki/Friends-of-Frodo-Baggins.git   
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Cd into the project folder.
+```
+cd path/to/folder/Friends-of-Frodo-Baggins
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Open in a code editor.
+```
+code .
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Code away!
 
-### `npm run eject`
+### Running the program.
+NOTE: Opening the files directly on the browser will not work since the api key is in a file added to .gitignore. You will not be able to fetch data from the API.
+To run the app locally, you may:
+- Install a http server
+```
+npm install --global http-server
+```
+- While in the project folder /Friends-of-Frodo-Baggins run the command:
+```
+http-server
+```
+- Visit the address given on the terminal to view the webpage.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## API Key
+You will need to have an API-key to make requests to the API used in this project. Just visit https://the-one-api.dev/ where all you need to do is sign up.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Once you have the key, add the following header to your requests:
+```
+headers: {
+    Authorization: "Bearer api-key"
+}
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+(Yes, data is returned in JSON format)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Store the api key in a separate module and import it into index.js. (You will also need to add the attribute type="module" on your script tag in index.html if not already added)
 
-## Learn More
+## Deployment
+The app is not hosted elsewhere apart from Github pages.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licence
+A copy of the General Public License v3.0 can be found [here.](LICENSE)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Authors
+Richard Gichuki. [Find me here.](https://github.com/ChadGichuki)
 
-### Code Splitting
+## Acknowledgements
+Grace Umutesi - Technical Mentor, Moringa School, Fullstack Software Engineering Course, May to October 2022.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
