@@ -2,7 +2,7 @@ import React from "react";
 
 function Results({polls}){
     return(
-        <table>
+        <table className="table table-striped-columns">
             <thead>
                 <tr>
                 <th>ITEM</th>
@@ -13,7 +13,7 @@ function Results({polls}){
                 <th>VOTES</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody class="table-group-divider">
                 {polls.map(poll => {
                     return(
                         <tr key={poll.id}>

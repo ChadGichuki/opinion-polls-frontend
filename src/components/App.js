@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      {/* <Navbar/> */}
+      <Navbar/>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/survey" element={<Survey handleSetPolls={(questions) => setPolls(questions)} polls={polls}/>}/>
