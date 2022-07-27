@@ -1,16 +1,14 @@
 
-# Friends-of-Frodo-Baggins
-A Lord Of The Rings Fanpage. 
+# Opinion-Polls
+A polling web app for popular opinions.
 
-This is a Single Page Application (SPA) where fans of the epic fantasy series by J.R.R. Tokien can find interesting facts on the movies, books and their favourite characters. Users can also add to the list of the fans' favourite quotes from the series. To enhance the user experience, visitors to the page get to enjoy the nostalgic and iconic song (Concerning Hobbits) from the 2nd Movie's soundtrack.
+This is a Single Page Application (SPA) where users vote between 2 closely related or widely contested options in various fields such as sports, technology, vehicles, smart phones etc.
 
-Vew the web page, hosted on Github pages [here.](https://chadgichuki.github.io/Friends-of-Frodo-Baggins/) 
+However, the backend is not yet deployed and can only be hosted locally. The repository can be cloned from [here](https://github.com/ChadGichuki/opinion-polls-json-server.git)
 
-However, please note that ES6 modules are subject to same-origin policy. You therefore need to run your script from a local server, opening the file directly with a browser will throw an error citing [CORS.](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS).
+When the app is running you should expect to see a home page like this:
 
-When running from a local server you should expect to see a page like this:
-
-<img src="https://github.com/ChadGichuki/Friends-of-Frodo-Baggins/blob/main/media/landing-page.png" height="500">
+<img src="homepage.png" height="500">
 
 
 ## Getting Started
@@ -20,7 +18,7 @@ The following should be installed to run the program locally: nodejs, npm
 ### Installation
 - Fork and clone the repository.
 ```
-git clone https://github.com/ChadGichuki/Friends-of-Frodo-Baggins.git   
+git clone https://github.com/ChadGichuki/opinion-polls-frontend.git
 ```
 
 - Cd into the project folder.
@@ -48,22 +46,8 @@ http-server
 ```
 - Visit the address given on the terminal to view the webpage.
 
-## API Key
-You will need to have an API-key to make requests to the API used in this project. Just visit https://the-one-api.dev/ where all you need to do is sign up.
-
-Once you have the key, add the following header to your requests:
-```
-headers: {
-    Authorization: "Bearer api-key"
-}
-```
-
-(Yes, data is returned in JSON format)
-
-Store the api key in a separate module and import it into index.js. (You will also need to add the attribute type="module" on your script tag in index.html if not already added)
-
 ## Deployment
-The app is not hosted elsewhere apart from Github pages.
+The app is not yet hosted anywhere.
 
 ## Licence
 A copy of the General Public License v3.0 can be found [here.](LICENSE)
