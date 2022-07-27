@@ -4,7 +4,7 @@ A polling web app for popular opinions.
 
 This is a Single Page Application (SPA) where users vote between 2 closely related or widely contested options in various fields such as sports, technology, vehicles, smart phones etc.
 
-However, the backend is not yet deployed and can only be hosted locally. The repository can be cloned from [here](https://github.com/ChadGichuki/opinion-polls-json-server.git)
+However, the backend is not yet deployed and can only be hosted locally. The repository can be cloned from [here.](https://github.com/ChadGichuki/opinion-polls-json-server.git)
 
 When the app is running you should expect to see a home page like this:
 
@@ -23,7 +23,7 @@ git clone https://github.com/ChadGichuki/opinion-polls-frontend.git
 
 - Cd into the project folder.
 ```
-cd path/to/folder/Friends-of-Frodo-Baggins
+cd path/to/folder/opinion-polls-frontend
 ```
 
 - Open in a code editor.
@@ -34,20 +34,20 @@ code .
 - Code away!
 
 ### Running the program.
-NOTE: Opening the files directly on the browser will not work since the api key is in a file added to .gitignore. You will not be able to fetch data from the API.
-To run the app locally, you may:
-- Install a http server
+- Before running the app, make sure the backend server is set up and running. Follow instructions on the [Backend README](https://github.com/ChadGichuki/opinion-polls-json-server.git) to start the server.
+
+- While in the project folder run the following series of commands to install dependencies and run the app in your local machine:
+
 ```
-npm install --global http-server
+npm install
+
+npm start
 ```
-- While in the project folder /Friends-of-Frodo-Baggins run the command:
-```
-http-server
-```
-- Visit the address given on the terminal to view the webpage.
+
+- Visit the address on the terminal to view the webpage.
 
 ## Deployment
-The app is not yet hosted anywhere.
+The app is not yet hosted on a cloud and can only be run locally.
 
 ## Licence
 A copy of the General Public License v3.0 can be found [here.](LICENSE)
