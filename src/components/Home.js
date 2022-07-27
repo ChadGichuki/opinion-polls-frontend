@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function Home(){
     return(
-        <div>
+        <div className="home">
             <h1>Welcome To The Popular Opinion Polls!</h1>
             <h3>Where every vote counts, and we count every vote.</h3>
             <p>Ready to take the survey?</p>

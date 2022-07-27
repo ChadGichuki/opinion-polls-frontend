@@ -21,3 +21,42 @@ form {
 table {
   margin-top: 10px;
 }
+
+#poll {
+  border: solid black 2px;
+  box-shadow: 6px 6px;
+  margin-top: 30px;
+}
+
+#poll h2 {
+  text-align: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.pollsflex {
+  display: flex;
+}
+
+.img {
+  width: auto;
+  height: 100px;
+  vertical-align: middle;
+}
+
+#vs {
+  margin-left: 2%;
+  margin-right: 2%;
+  
+}
+
+.survey {
+  margin-left: 8%;
+  margin-right: 8%;
+  margin-top: 2%;
+}
+
+.myCard {
+  max-width: fit-content;
+
+}

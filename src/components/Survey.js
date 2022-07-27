@@ -12,7 +12,7 @@ function Survey({handleSetPolls, polls}){
 
     return(
         <div className="survey">
-            <h1>Vote once for your preferred option on each question</h1>
+            <h1>Vote once for each preferred option</h1>
             {polls.map(poll => {
                return <Poll key={poll.id} id={poll.id} question={poll.question} option1={poll.option1} option2={poll.option2}/>
             })}

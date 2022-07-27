@@ -11,7 +11,7 @@ function Poll({id, question, option1, option2}){
             method: "PATCH",
             headers: {"Content-type": "Application/json"},
             body: JSON.stringify({
-                "option1": {"votes": updatedVotes}
+                "option1": {"image": option1.image, "label": option1.label, "votes": updatedVotes}
             })
         })
         .then(res => res.json())
@@ -27,7 +27,7 @@ function Poll({id, question, option1, option2}){
             method: "PATCH",
             headers: {"Content-type": "Application/json"},
             body: JSON.stringify({
-                "option2": {"votes": updatedVotes}
+                "option2": {"image": option2.image, "label": option2.label, "votes": updatedVotes}
             })
         })
         .then(res => res.json())
@@ -35,10 +35,10 @@ function Poll({id, question, option1, option2}){
     }
 
     return(
-        <div id="polls">
+        <div id="poll">
             <h2>{question}</h2>
             <div className="pollsflex">
-                <div className="card mb-3" style={{"max-width": "65rem"}}>
+                <div className="card" style={{"width": "65rem"}}>
                     <div className="row g-0">
                         <div className="col-md-4">
                             <img src={option1.image} alt={option1.label} className="img-fluid rounded-start" />
@@ -52,8 +52,8 @@ function Poll({id, question, option1, option2}){
                         </div>
                     </div>
                 </div>
-                <h3>Vs</h3>
-                <div className="card mb-3" style={{"width": "65rem"}}>
+                <h3 id="vs">Vs</h3>
+                <div className="card" style={{"width": "65rem"}}>
                     <div className="row g-0">
                         <div className="col-md-4">
                             <img src={option2.image} alt={option2.label} className="img-fluid rounded-start" />
@@ -73,19 +73,3 @@ function Poll({id, question, option1, option2}){
 }
 
 export default Poll
-
-
-{/* <div class="card mb-3" style="max-width: 540px;">
-  <div class="row g-0">
-    <div class="col-md-4">
-      <img src="..." class="img-fluid rounded-start" alt="...">
-    </div>
-    <div class="col-md-8">
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-      </div>
-    </div>
-  </div>
-</div> */}
