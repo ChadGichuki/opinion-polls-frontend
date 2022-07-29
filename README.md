@@ -6,6 +6,8 @@ This is a Single Page Application (SPA) where users vote between 2 closely relat
 
 The app is hosted on gh-pages and can be viewed [here.](https://ChadGichuki.github.io/opinion-polls-frontend)
 
+The backend hosted on heroku can also be found [here.](https://dry-forest-65259.herokuapp.com/)
+
 When the app is running you should expect to see a home page like this:
 
 <img src="homepage.png" height="500">
