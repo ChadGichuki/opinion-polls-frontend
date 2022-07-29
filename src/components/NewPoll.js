@@ -32,7 +32,7 @@ function NewPoll({onNewPoll}){
 
     function handleFormSubmit(e){
         e.preventDefault()
-        fetch("http://localhost:3000/questions", {
+        fetch("https://dry-forest-65259.herokuapp.com/questions", {
             method: "POST",
             headers: {"Content-Type": "Application/json"},
             body: JSON.stringify({

@@ -7,7 +7,7 @@ function Poll({id, question, option1, option2}){
         // Increment current votes by 1
         const updatedVotes = option1.votes += 1
         // PATCH the update
-        fetch(`http://localhost:3000/questions/${id}`, {
+        fetch(`https://dry-forest-65259.herokuapp.com/questions/${id}`, {
             method: "PATCH",
             headers: {"Content-type": "Application/json"},
             body: JSON.stringify({
@@ -23,7 +23,7 @@ function Poll({id, question, option1, option2}){
         // Increment current votes by 1
         const updatedVotes = option2.votes += 1
         // PATCH the update
-        fetch(`http://localhost:3000/questions/${id}`, {
+        fetch(`https://dry-forest-65259.herokuapp.com/questions/${id}`, {
             method: "PATCH",
             headers: {"Content-type": "Application/json"},
             body: JSON.stringify({

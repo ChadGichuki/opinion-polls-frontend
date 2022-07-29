@@ -6,7 +6,7 @@ function Survey({handleSetPolls, polls}){
 
     // On loading of the Survey component, get the polls to display on Survey page
     useEffect(() => {
-        fetch("http://localhost:3000/questions")
+        fetch("https://dry-forest-65259.herokuapp.com/questions")
         .then(res => res.json())
         .then(data => handleSetPolls(data))
     }, [])
