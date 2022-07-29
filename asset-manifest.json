@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/opinion-polls-frontend/static/css/main.24cc0fd1.css",
+    "main.js": "/opinion-polls-frontend/static/js/main.ce3d1c94.js",
+    "static/js/787.4fd6018c.chunk.js": "/opinion-polls-frontend/static/js/787.4fd6018c.chunk.js",
+    "index.html": "/opinion-polls-frontend/index.html",
+    "main.24cc0fd1.css.map": "/opinion-polls-frontend/static/css/main.24cc0fd1.css.map",
+    "main.ce3d1c94.js.map": "/opinion-polls-frontend/static/js/main.ce3d1c94.js.map",
+    "787.4fd6018c.chunk.js.map": "/opinion-polls-frontend/static/js/787.4fd6018c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24cc0fd1.css",
+    "static/js/main.ce3d1c94.js"
+  ]
+}
