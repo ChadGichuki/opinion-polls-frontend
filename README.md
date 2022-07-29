@@ -4,7 +4,7 @@ A polling web app for popular opinions.
 
 This is a Single Page Application (SPA) where users vote between 2 closely related or widely contested options in various fields such as sports, technology, vehicles, smart phones etc.
 
-However, the backend is not yet deployed and can only be hosted locally. The repository can be cloned from [here.](https://github.com/ChadGichuki/opinion-polls-json-server.git)
+The app is hosted on gh-pages and can be viewed [here.](https://ChadGichuki.github.io/opinion-polls-frontend)
 
 When the app is running you should expect to see a home page like this:
 
@@ -47,7 +47,12 @@ npm start
 - Visit the address on the terminal to view the webpage.
 
 ## Deployment
-The app is not yet hosted on a cloud and can only be run locally.
+The app is currently hosted on gh-pages.
+
+To make changes, push commiits to the gh-pages branch.
+
+## The Backend
+The backend is currently hosted on heroku. The repository can be cloned from [here.](https://github.com/ChadGichuki/opinion-polls-json-server.git)
 
 ## Licence
 A copy of the General Public License v3.0 can be found [here.](LICENSE)
